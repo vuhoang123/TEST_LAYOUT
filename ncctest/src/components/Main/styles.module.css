@@ -1,0 +1,56 @@
+.row {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+.main {
+  display: flex;
+}
+.main_container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.logo {
+  width: 310px;
+  height: 122px;
+}
+.container {
+  max-width: 1768px;
+  margin: auto 90px;
+}
+.header_content {
+  text-align: center;
+}
+.info_content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #efefef;
+  padding: 10px 130px;
+}
+
+/*----- Reponsive ----- */
+
+/* desktop  */
+@media screen and (max-width: 1200px) {
+}
+/* tablet  */
+@media screen and (max-width: 992px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+/* mobile: horizontal  */
+@media screen and (max-width: 769px) {
+  .row {
+    flex-direction: column;
+  }
+  .info_content {
+    padding: 5px 30px;
+  }
+}
+/* mobile: vertical */
+@media screen and (max-width: 576px) {
+}
