@@ -3,6 +3,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -30,6 +32,290 @@
 .App-link {
   color: #61dafb;
 }
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* HEADER */
+.header {
+  text-align: center;
+}
+.header a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+}
+.header h4 {
+  font-size: 24px;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_content .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_content .navBar .nav_item {
+  margin-right: 80px;
+}
+.header_content .navBar a:hover {
+  color: red;
+}
+.navBar_Toggle {
+  display: none;
+}
+
+/* CAROUSEL */
+.carousel {
+  text-align: center;
+}
+.carousel_content {
+}
+.carousel_content .title {
+  margin-bottom: 60px;
+}
+.carousel_content .title h1 {
+  font-size: 163px;
+  line-height: 134px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.carousel_content .text {
+  margin-top: 0;
+  padding-top: 0;
+}
+.carousel_content .text p {
+  font-size: 32px;
+  line-height: 39px;
+  color: #bababa;
+  padding: 0 150px;
+}
+
+/* WORK */
+.work {
+  margin-top: 240px;
+}
+.container_work {
+  text-align: center;
+}
+.container_work .title h1 {
+  font-size: 80px;
+  margin-bottom: 100px;
+}
+.container_work .work_content {
+}
+.container_work .work_content .work_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.container_work .work_content img {
+  width: 100%;
+}
+.work .grid_item {
+  position: relative;
+  overflow: hidden;
+}
+.work .detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  transition: all 800ms;
+  transform: translateY(250px);
+  text-align: left;
+}
+.work .detail h3 {
+  font-size: 45px;
+  line-height: 54px;
+  margin: 10px 30px;
+}
+.work .detail p {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 10px 30px;
+}
+.work .detail a {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 30px 30px 30px;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+}
+.work .detail a:hover {
+  color: red;
+}
+.arrow {
+  vertical-align: middle;
+}
+
+.work .grid_item:hover .detail {
+  transform: translateY(0px);
+}
+
+/* SERVICES */
+.service {
+  margin-top: 240px;
+}
+.service .container {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.service .title {
+  text-align: center;
+}
+.service .title h1 {
+  font-size: 80px;
+  margin-bottom: 100px;
+}
+.service .service_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px 60px;
+}
+.service .service_grid .grid_item {
+  color: black;
+  background-color: white;
+}
+.service .item_content h3 {
+  font-size: 36px;
+  line-height: 44px;
+  margin: 60px 30px 30px 30px;
+}
+.service .item_content p {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 10px 30px;
+}
+.service .item_content a {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 30px 50px 30px;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+}
+.service .item_content a:hover {
+  color: red;
+}
+.service .item_footer {
+  background-color: #00cf2e;
+  color: white;
+  padding: 8px 30px;
+}
+
+/* TEAM  */
+.team {
+  margin-top: 240px;
+}
+
+.team_container .title {
+  text-align: center;
+  padding: 0 200px;
+  margin-bottom: 50px;
+}
+.team_container .title h1 {
+  font-size: 80px;
+}
+.team_container .title p {
+  font-size: 24px;
+}
+
+.team .team_grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.team .team_grid .grid_item {
+  position: relative;
+  overflow: hidden;
+}
+.team .team_grid .grid_item img {
+  width: 100%;
+}
+.team .team_grid .grid_item .detail {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  transition: all 800ms;
+  transform: translateY(120px);
+  text-align: left;
+  width: 100%;
+}
+.team .team_grid .grid_item:hover .detail {
+  transform: translateY(0);
+}
+.team .detail h3 {
+  font-size: 45px;
+  line-height: 54px;
+  margin: 10px 30px;
+}
+.team .detail p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 30px;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 240px;
+}
+.contact .title {
+  text-align: center;
+}
+.contact .title h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+.contact .info {
+  text-align: center;
+}
+.contact .info p {
+  font-size: 50px;
+  margin-top: 5px;
+}
+.contact .navBar_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.contact .navBar_info a {
+  display: block;
+  color: #c6c6c6;
+  font-size: 30px;
+  cursor: pointer;
+}
+.contact .navBar_info a:hover {
+  color: red;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 240px;
+  background-color: white;
+}
+.footer .footer_content {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.footer .footer_content .right_content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_content .right_content .text1 {
+  margin-right: 50px;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -40,15 +326,103 @@
   }
 }
 
+/* REPONSIVE */
 @media screen and (max-width: 1200px) {
 }
 /* tablet  */
 @media screen and (max-width: 992px) {
-  
+  .carousel_content .title h1 {
+    font-size: 130px;
+    line-height: 90px;
+  }
+  .carousel_content .text p {
+    font-size: 28px;
+    line-height: 29px;
+  }
+  .work .detail h3 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .work .detail p {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .work .detail {
+    transform: translateY(550px);
+  }
+
+  .team .team_grid .grid_item .detail {
+    transform: translateY(340px);
+  }
+  .team .detail h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .contact .navBar_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
 }
 /* mobile: horizontal  */
 @media screen and (max-width: 768px) {
+  .header_content .navBar {
+    display: none;
+  }
+  .navBar_Toggle {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar_Toggle .toggle {
+    display: block;
+    align-items: center;
+    font-size: 40px;
+  }
+  .carousel_content .title h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .carousel_content .text p {
+    font-size: 18px;
+    line-height: 29px;
+    padding: 0 80px;
+  }
+  .service .title h1,
+  .team_container .title h1,
+  .contact .title h1 {
+    font-size: 60px;
+  }
+  .contact .info p {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .container_work .work_content .work_grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .service .service_grid {
+    grid-template-columns: auto;
+  }
 
+  .contact .navBar_info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+  .contact .navBar_info a {
+    font-size: 22px;
+  }
+
+  .team_container .title {
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
 }
 /* mobile: vertical */
 @media screen and (max-width: 576px) {
